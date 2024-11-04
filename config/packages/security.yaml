@@ -41,9 +41,10 @@ security:
                 - post
 
         media_object:
-            pattern: ^/api/media_objects$
+            pattern: ^/api/media_objects.*$
             security: false
             methods:
+                - get
                 - post
 
         user_auth_refreshToken:
